@@ -5,37 +5,27 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
+import './styles.css'
+
 
 const Footer = () => {
     return (
         <footer>
             <Container>
+                <h3>TITLE</h3>
                 <Row>
                     <Col>
-                        <h5>About Us</h5>
-                        <a href="#">Aim</a>
-                        <a href="#">Vision</a>
-                        <a href="#">Testimonials</a>
-                    </Col>
-                    <Col>
-                        <h5>Services</h5>
-                        <a href="#">Writing</a>
-                        <a href="#">Internships</a>
-                        <a href="#">Coding</a>
-                        <a href="#">Teaching</a>
-                    </Col>
-                    <Col>
-                        <h5>Contact Us</h5>
-                        <a href="#">Uttar Pradesh</a>
-                        <a href="#">Ahemdabad</a>
-                        <a href="#">Indore</a>
-                        <a href="#">Mumbai</a>
-                    </Col>
-                    <Col>
-                        <h5>Social Media</h5>
-                        <a href="#">{<FacebookIcon />}</a>
-                        <a href="#">{<InstagramIcon />}</a>
-                        <a href="#">{<YouTubeIcon />}</a>
+                        <a href="#">Inicio</a>
+                        <a href="#">Sobre Nosotros</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Contacto</a>
+                    </Col>                    
+                </Row>
+                <Row>
+                    <Col className="socials">
+                        <a href="">{<FacebookIcon />}</a>
+                        <a href="">{<InstagramIcon />}</a>
+                        <a href="">{<YouTubeIcon />}</a>
                     </Col>
                 </Row>
             </Container>

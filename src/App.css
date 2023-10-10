@@ -1,0 +1,82 @@
+.navbar {
+    background-color: #150D0F;
+    color: #CC313D;
+}
+.navbar a {
+    color: #CC313D;
+}
+.navbar a:hover {
+    color: #FFFFFF;
+}
+main, footer {
+    background-color: #150D0F;
+    color: #FFFFFF;
+}
+section {
+    padding: 50px;
+}
+/*Seccion 1: Carousel*/
+.welcome{
+    padding: 0;
+}
+.carousel-img {
+    width: 100%;
+    height: 80vh;
+}
+/*Seccion 2: About*/
+.about-Img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-About h4 {
+    font-size: 36px;
+    color: #CC313D;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/*Seccion 3: Recomendaciones*/
+.recs {
+    text-align: center;
+}
+.recs h2 {
+    color: #CC313D;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.recs .card {
+    width: 30%;
+    margin: 20px;
+    background-color: #150D0F;
+    color: #CC313D;
+    border: #CC313D solid 1px;
+    padding: 10px;
+}
+.recs .card-subtitle {
+    margin-top: 5px;
+}
+.recs .card-img-top{
+    border-radius: 0;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+}
+footer h3{
+    font-size: 36px;
+    margin: 20px;
+}
+footer a {
+    color: #CC313D;
+    padding: 20px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+footer .socials {
+    margin-top: 20px;
+    font-size: 14px;
+}

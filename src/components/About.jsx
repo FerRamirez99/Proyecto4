@@ -1,20 +1,20 @@
-import { Button, Card } from "react-bootstrap"
-
+import { Col, Container, Row } from "react-bootstrap"
+import img1 from "../assets/welcome-Img.jpg"
 
 const About = () => {
     return (
-        <section>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+        <section className="section-About">
+            <Container>
+                <Row>
+                    <Col sm={6}>
+                        <img src={img1} alt="" className="about-Img"/>
+                    </Col>
+                    <Col sm={6}>
+                        <h4>Sobre Nosotros</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aliquam autem in mollitia labore quidem deserunt. Fuga molestiae consectetur tempore id sint cupiditate dicta neque. Repellat quod dolorum odio amet.</p>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }
