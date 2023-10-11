@@ -1,14 +1,15 @@
+import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import logo from '../assets/logo.png'
+
+import logo from '../../assets/logo.png'
+
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
-import './styles.css'
-
 
 const Footer = () => {
     return (
@@ -19,17 +20,17 @@ const Footer = () => {
                 <hr />
                <Row>
                     <Col>
-                        <a href="#">Inicio</a>
-                        <a href="#">Sobre Nosotros</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Contacto</a>
+                        <NavLink to="/home">Inicio</NavLink>
+                        <NavLink to="/about">Sobre Nosotros</NavLink>
+                        <NavLink to="">Menu</NavLink>
+                        <NavLink to="">Reserva</NavLink>
                     </Col>                    
                 </Row>
                 <Row>
                     <Col className="socials">
-                        <a href="">{<FacebookIcon />}</a>
-                        <a href="">{<InstagramIcon />}</a>
-                        <a href="">{<YouTubeIcon />}</a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">{<FacebookIcon />}</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">{<InstagramIcon />}</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">{<YouTubeIcon />}</a>
                     </Col>
                 </Row>
             </Container>

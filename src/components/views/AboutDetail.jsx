@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap"
-import img1 from "../assets/placeholder.png"
+import img1 from "../../assets/placeholder.png"
 
 
 const AboutDetail = () => {
