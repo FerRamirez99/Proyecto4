@@ -1,22 +1,12 @@
-import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+import { Button, Container, Form } from 'react-bootstrap'
 import SendIcon from '@mui/icons-material/Send';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact">
             <Container>
                 <h2>Contactanos</h2>
-                <Row>
-                    <Col>
-                        <p><LocalPhoneIcon /> +56 9 12345678</p>
-                    </Col>
-                    <Col>
-                        <p><EmailIcon /> example@example.com</p>
-                    </Col>
-                </Row>
-                <hr />
+
                 <Form>
                     <Form.Group className="mb-3">
                         <Form.Label htmlFor="TextInput">Nombre</Form.Label>
