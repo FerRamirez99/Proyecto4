@@ -33,7 +33,7 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-.section-About h4 {
+.section-About h1 {
     font-size: 36px;
     color: #CC313D;
     text-transform: uppercase;
@@ -43,6 +43,7 @@ section {
     border: #CC313D 1px solid;
     color: #CC313D;
     width: 20%;
+    margin-top: 30px;
 }
 .section-About button:hover {
     border: #CC313D 1px solid;
@@ -155,4 +156,72 @@ footer .socials {
 footer .copy {
     font-size: 14px;
     margin-top: 25px;
+}
+/*ABOUT VIEW*/
+.about-page {
+    background-color: #150D0F;
+    color: #FFFFFF;
+    padding: 0;
+    text-align: center;
+}
+.about-page .img-about{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.about-page h2 {
+    text-align: left;
+    color: #CC313D;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin: 25px 0;
+}
+.about-page h3 {
+    text-align: left;
+    color: #CC313D;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-page p {
+    text-align: left;
+    font-size: 16px;
+}
+
+/*ERROR PAGE*/
+.error-page {
+    background-color: #150D0F;
+    color: #CC313D;
+    text-align: center;
+    padding: 100px;
+}
+.error-page h1 {
+    font-size: 76px;
+}
+.error-page h3 {
+    font-size: 56px;
+}
+.error-page hr {
+    margin: 50px;
+}
+.error-page h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+.error-page button {
+    margin: 30px;
+    width: 15%;
+    border: #CC313D 1px solid;
+    color: #CC313D;
+}
+.error-page button:hover {
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+.error-page button:focus{
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }

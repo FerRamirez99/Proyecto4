@@ -8,26 +8,24 @@ const Welcome = () => {
         <section className='welcome'>
             <Carousel fade>
                 <Carousel.Item>
-                    <img src={img1} alt="" className='carousel-img'/>
+                    <img src={img1} alt="" className='carousel-img' />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h1>Vita in Tavola</h1>
+                        <h5>La mejor alternativa de comida italiana.</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={img2} alt="" className='carousel-img'/>
+                    <img src={img2} alt="" className='carousel-img' />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h1>Vita in Tavola</h1>
+                        <h5>La mejor alternativa de comida italiana.</h5>                   
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={img3} alt="" className='carousel-img'/>
+                    <img src={img3} alt="" className='carousel-img' />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <h1>Vita in Tavola</h1>
+                        <h5>La mejor alternativa de comida italiana.</h5>                    
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
