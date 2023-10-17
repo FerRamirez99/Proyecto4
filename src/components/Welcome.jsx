@@ -11,21 +11,21 @@ const Welcome = () => {
                     <img src={img1} alt="" className='carousel-img' />
                     <Carousel.Caption>
                         <h1>Vita in Tavola</h1>
-                        <h5>La mejor alternativa de comida italiana.</h5>
+                        <h5>La mejor alternativa de comida italiana en Santiago.</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img src={img2} alt="" className='carousel-img' />
                     <Carousel.Caption>
                         <h1>Vita in Tavola</h1>
-                        <h5>La mejor alternativa de comida italiana.</h5>                   
+                        <h5>La mejor alternativa de comida italiana en Santiago.</h5>                   
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img src={img3} alt="" className='carousel-img' />
                     <Carousel.Caption>
                         <h1>Vita in Tavola</h1>
-                        <h5>La mejor alternativa de comida italiana.</h5>                    
+                        <h5>La mejor alternativa de comida italiana en Santiago.</h5>                    
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

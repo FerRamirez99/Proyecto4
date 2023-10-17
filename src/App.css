@@ -51,27 +51,34 @@ section {
     background-color: #CC313D;
 }
 /*Seccion 3: Recomendaciones*/
-.recs {
+.menu {
     text-align: center;
 }
-.recs h2 {
-    color: #CC313D;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.recs .card {
-    width: 30%;
-    margin: 20px;
+.menu .card {
     background-color: #150D0F;
     color: #CC313D;
-    border: #CC313D solid 1px;
-    padding: 10px;
+    border: 0;
 }
-.recs .card-subtitle {
-    margin-top: 5px;
+.menu .card-img {
+    height: 30vh;
 }
-.recs .card-img-top{
+.menu .card-img-overlay{
     border-radius: 0;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    padding: 40px;
+}
+.menu .card-title{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+.menu button {
+    border: #FFFFFF 1px solid;
+    color: #FFFFFF;
+    width: 20%;
+}
+.menu button:hover {
+    border: #CC313D 1px solid;
+    background-color: #CC313D;
 }
 /*Contact*/
 .contact {
@@ -128,6 +135,33 @@ section {
     font-size: 36px;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+.booking{
+    text-align: center;
+}
+.booking .card {
+    border: 0;
+}
+.booking .card-img-top {
+    height: 40vh;
+}
+.booking .card-img-overlay{
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    padding: 50px;
+}
+.booking .card-title{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.booking button {
+    border: #FFFFFF 1px solid;
+    color: #FFFFFF;
+    width: 20%;
+}
+.booking button:hover {
+    border: #CC313D 1px solid;
+    background-color: #CC313D;
 }
 footer {
     text-align: center;
@@ -221,6 +255,87 @@ footer .copy {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
 .error-page button:focus{
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+/*BOOKING PAGE*/
+.booking-detail{
+    padding: 20px 50px;
+}
+.booking-detail h2{
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #CC313D;
+}
+.booking-detail p {
+    font-size: 20px;
+}
+.booking-detail .card {
+    padding: 20px;
+    background-color: #150D0F;
+    border: #CC313D 1px solid;
+    color: #CC313D;
+}
+.booking-detail input {
+    background-color: #150D0F;
+    border: #CC313D 1px solid;
+    color: #FFFFFF;
+}
+.booking-detail input::placeholder {
+    color: #FFFFFF;
+}
+.booking-detail input:focus {
+    background-color: #150D0F;
+    color: #FFFFFF;
+    border: #CC313D 1px solid;
+}
+.booking-detail select {
+    background-color: #150D0F;
+    border: #CC313D 1px solid;
+    color: #FFFFFF;
+}
+.booking-detail select:focus {
+    border: #CC313D 1px solid;
+}
+.booking-detail button {
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    width: 15%;
+    margin-top: 20px;
+}
+.booking-detail button:hover {
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+/*MENU LIST*/
+.menu-list {
+    text-align: center;
+    color: #CC313D;
+}
+.menu-list h2 {
+    text-transform: uppercase;
+    font-size: 52px;
+    padding: 30px;
+}
+.menu-list .card {
+    margin: 15px;
+    background-color: #150D0F;
+    border: #CC313D 1px solid;
+    color: #CC313D;
+    padding: 10px;
+}
+.menu-list .card-footer{
+    border: 0;
+}
+.menu-list button {
+    background-color: #CC313D;
+    border: #CC313D 1px solid;
+    width: 100%;
+}
+.menu-list button:hover {
     background-color: #CC313D;
     border: #CC313D 1px solid;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);

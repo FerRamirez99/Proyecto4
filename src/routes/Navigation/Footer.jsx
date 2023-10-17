@@ -22,8 +22,8 @@ const Footer = () => {
                     <Col>
                         <NavLink to="/home">Inicio</NavLink>
                         <NavLink to="/about">Sobre Nosotros</NavLink>
-                        <NavLink to="">Menu</NavLink>
-                        <NavLink to="">Reserva</NavLink>
+                        <NavLink to="/menu">Menú</NavLink>
+                        <NavLink to="/booking">Reserva</NavLink>
                     </Col>                    
                 </Row>
                 <Row>

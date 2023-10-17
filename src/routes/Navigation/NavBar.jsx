@@ -17,8 +17,8 @@ const NavBar = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link as={NavLink} to="/about">Sobre Nosotros</Nav.Link>
-                            <Nav.Link as={NavLink} to="">Menu</Nav.Link>
-                            <Nav.Link as={NavLink} to="">Reserva</Nav.Link>
+                            <Nav.Link as={NavLink} to="/menu">Menú</Nav.Link>
+                            <Nav.Link as={NavLink} to="/booking">Reserva</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

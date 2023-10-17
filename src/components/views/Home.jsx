@@ -1,8 +1,8 @@
 import Welcome from '../Welcome'
 import About from '../About'
-import Recs from '../Recs'
 import Menu from '../Menu'
 import SeccContYlLoc from '../SeccContYlLoc'
+import Booking from '../Booking'
 
 const Home = () => {
     return (
@@ -10,9 +10,9 @@ const Home = () => {
             <main>
                 <Welcome />
                 <About />
-                <Recs />
                 <Menu />
                 <SeccContYlLoc />
+                <Booking />
             </main>
         </>
     )
