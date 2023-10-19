@@ -2,6 +2,8 @@ import { Button, Col, Container, Form, FormGroup, Row, Table } from "react-boots
 import { db } from "../../config/Firebase"
 import { useEffect, useState } from "react"
 import { addDoc, collection, deleteDoc, doc, getDocs, updateDoc } from "firebase/firestore"
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import EditIcon from '@mui/icons-material/Edit';
 
 
 const BookingDetail = () => {
@@ -23,14 +25,14 @@ const BookingDetail = () => {
         const getData = async () => {
             const dbVal = await getDocs(dbName)
             //! Traer elementos
-            setVal(dbVal.docs.map((doc) => ({...doc.data(), id:doc.id})))
+            setVal(dbVal.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         }
         getData()
     })
 
     const handleSubmit = async () => {
         //! Agregar elementos
-        await addDoc(dbName, {nombre: nombre, email: email, personas: personas, fecha: fecha, hora: hora})
+        await addDoc(dbName, { nombre: nombre, email: email, personas: personas, fecha: fecha, hora: hora })
         setNombre("")
         setEmail("")
         setPersonas("")
@@ -57,7 +59,7 @@ const BookingDetail = () => {
     const handleUpdate = async () => {
         //! Reescribe los datos, cambia el boton y limpia los input
         const updateData = doc(db, 'reservas', id)
-        await updateDoc(updateData, {nombre: nombre, email: email, personas: personas, fecha: fecha, hora: hora})
+        await updateDoc(updateData, { nombre: nombre, email: email, personas: personas, fecha: fecha, hora: hora })
         setShow(false)
         setNombre("")
         setEmail("")
@@ -65,7 +67,7 @@ const BookingDetail = () => {
         setFecha("")
         setHora("")
     }
-    
+
     return (
         <main className="booking-detail">
             <Container>
@@ -144,15 +146,15 @@ const BookingDetail = () => {
                             </Form.Select>
                         </FormGroup>
                     </Row>
-                    {!show?<Button onClick={handleSubmit}>Reservar</Button>:
-                    <Button onClick={handleUpdate}>Guardar</Button>}
+                    {!show ? <Button onClick={handleSubmit}>Reservar</Button> :
+                        <Button onClick={handleUpdate}>Guardar</Button>}
                 </Form >
 
                 <hr />
 
-                <section>
+                <section className="booking-list">
                     <h4>Lista de Reservas</h4>
-                    <Table bordered>
+                    <Table striped variant="dark" responsive>
                         <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -164,19 +166,19 @@ const BookingDetail = () => {
                             </tr>
                         </thead>
                         <tbody>
-                        {
-                            val.map((values) => (
-                                <tr key={values.id}>
-                                    <td>{values.nombre}</td>
-                                    <td>{values.email}</td>
-                                    <td>{values.personas}</td>
-                                    <td>{values.fecha}</td>
-                                    <td>{values.hora}</td>
-                                    <td><button onClick={() =>handleDelete(values.id)}>Borrar</button>
-                                    <button onClick={() =>handleEdit(values.id, values.nombre, values.email, values.personas, values.fecha, values.hora)}>Editar</button></td>
-                                </tr>
-                            ))
-                        }
+                            {
+                                val.map((values) => (
+                                    <tr key={values.id}>
+                                        <td>{values.nombre}</td>
+                                        <td>{values.email}</td>
+                                        <td>{values.personas}</td>
+                                        <td>{values.fecha}</td>
+                                        <td>{values.hora}</td>
+                                        <td className="actions"><Button onClick={() => handleDelete(values.id)}><DeleteOutlineIcon /></Button>
+                                            <Button onClick={() => handleEdit(values.id, values.nombre, values.email, values.personas, values.fecha, values.hora)}><EditIcon /></Button></td>
+                                    </tr>
+                                ))
+                            }
                         </tbody>
                     </Table>
                 </section>

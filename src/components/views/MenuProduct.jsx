@@ -39,10 +39,10 @@ const MenuProduct = () => {
         <h2>{menu.nombre}</h2>
         
         <Row>
-          <Col xs={4}>
+          <Col md={4}>
             <img src={menu.imagen} alt={menu.nombre} />
           </Col>
-          <Col xs={8}>
+          <Col md={8}>
             <p className="detalle">Detalle: <br />{menu.detalle}</p>
             <p className="precio">${menu.precio}</p>
             <p className="sku">SKU: {menu.sku}</p>

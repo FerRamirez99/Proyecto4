@@ -15,16 +15,25 @@ const Footer = () => {
     return (
         <footer>
             <Container>
-                <img src={logo} alt="Logo" className="logo"/>
-                <p><LocalPhoneIcon /> +56 9 12345678 &emsp; &emsp; &emsp; <EmailIcon /> vitaintavola@gmail.com</p>    
+                <img src={logo} alt="Logo" className="logo" />
+                <div className="info-mobile">
+                    <Row>
+                        <Col><p><LocalPhoneIcon /> +56 9 12345678</p></Col>
+                        <Col><p><EmailIcon /> vitaintavola@gmail.com</p></Col>
+                    </Row>
+                </div>
+
+                <div className="info-desk">
+                    <p><LocalPhoneIcon /> +56 9 12345678 &emsp; &emsp; &emsp; <EmailIcon /> vitaintavola@gmail.com</p>
+                </div>
                 <hr />
-               <Row>
+                <Row>
                     <Col>
                         <NavLink to="/">Inicio</NavLink>
                         <NavLink to="/about">Sobre Nosotros</NavLink>
                         <NavLink to="/menu">Menú</NavLink>
                         <NavLink to="/booking">Reserva</NavLink>
-                    </Col>                    
+                    </Col>
                 </Row>
                 <Row>
                     <Col className="socials">

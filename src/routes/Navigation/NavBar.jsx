@@ -8,7 +8,7 @@ import logo from '../../assets/logo.png'
 const NavBar = () => {
     return (
         <header>
-            <Navbar collapseOnSelect expand="lg" className="navbar">
+            <Navbar collapseOnSelect expand="lg" className="navbar" data-bs-theme="dark">
                 <Container>
                     <Navbar.Brand as={NavLink} to="/"><img src={logo} alt="Logo" className='logo'/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

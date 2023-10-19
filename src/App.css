@@ -1,5 +1,7 @@
-.navbar {
+#root {
     background-color: #150D0F;
+}
+.navbar {
     color: #CC313D;
 }
 .navbar .logo {
@@ -12,7 +14,6 @@
     color: #FFFFFF !important;
 }
 main, footer {
-    background-color: #150D0F;
     color: #FFFFFF;
 }
 section {
@@ -50,7 +51,7 @@ section {
     color: #FFFFFF;
     background-color: #CC313D;
 }
-/*Seccion 3: Recomendaciones*/
+/*Seccion 3: menu*/
 .menu {
     text-align: center;
 }
@@ -80,7 +81,7 @@ section {
     border: #CC313D 1px solid;
     background-color: #CC313D;
 }
-/*Contact*/
+/*Seccion 4: Contact*/
 .contact {
     padding: 0 50px;
     color: #CC313D;
@@ -96,7 +97,8 @@ section {
     color: #FFFFFF;
 }
 .contact input::placeholder {
-    color: #FFFFFF;
+    color: #AAAAAA;
+    font-style: italic;
 }
 .contact input:focus {
     background-color: #150D0F;
@@ -126,7 +128,7 @@ section {
     border: #CC313D 1px solid;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
-/*Seccion: Location*/
+/*Seccion 5: Location*/
 .location {
     padding: 0 50px;
     color: #CC313D;
@@ -136,6 +138,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+/*Seccion 6: Reserva*/
 .booking{
     text-align: center;
 }
@@ -162,6 +165,12 @@ section {
 .booking button:hover {
     border: #CC313D 1px solid;
     background-color: #CC313D;
+}
+.info-desk  {
+    display: block;
+}
+.info-mobile {
+    display: none;
 }
 footer {
     text-align: center;
@@ -303,7 +312,7 @@ footer .copy {
 .booking-detail button {
     background-color: #CC313D;
     border: #CC313D 1px solid;
-    width: 15%;
+    width: 20%;
     margin-top: 20px;
 }
 .booking-detail button:hover {
@@ -311,10 +320,22 @@ footer .copy {
     border: #CC313D 1px solid;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
-.booking-detail .table {
+.booking-detail .booking-list{
+    padding: 0;
+}
+.booking-list table {
+    border: #CC313D 1px solid;
+}
+.table-dark {
     background-color: #150D0F;
-    color: #FFFFFF;
-    border: #CC313D 1 px solid;
+}
+.booking-list .actions {
+    text-align: center;
+}
+.booking-list button {
+    font-size: 10px;
+    width:auto;
+    margin: 0 10px
 }
 
 /*MENU LIST*/
@@ -352,6 +373,7 @@ footer .copy {
     border: #CC313D 1px solid;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
+/*Menu plato individual*/
 .menu-item {
     padding: 30px 50px 120px 50px;    
 }
@@ -372,3 +394,142 @@ footer .copy {
 .menu-item .sku {
     font-size: 12px;
 } 
+
+/*MOBILE*/
+@media only screen and (max-width: 600px){
+    /*HOME*/
+    section {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    /*Navbar*/
+    .navbar-nav a {
+        text-align: center;
+    }
+    /*Welcome*/
+    .carousel-img {
+        height: 50vh;
+    }
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    .carousel-caption h5 {
+        font-size: 16px;
+    }
+    /*About*/
+    .about-Img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-About h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .section-About button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*Menu*/
+    .menu .card-img-overlay{
+        padding: 10px;
+    }
+    .menu .card-title {
+        font-size: 32px;
+    }
+    .menu button {
+        width: 80%;
+    }
+    /*Contacto*/
+    .contact {
+        padding: 5px 0;
+    }
+    /*Location*/
+    .location {
+        padding: 20px 0;
+    }
+    iframe {
+        width: 100%;
+    }
+    /*Reserva*/
+    .booking .card-img-overlay{
+        padding: 25px;
+    }
+    .booking .card-title{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .booking button {
+        width: 80%;
+    }
+    /*Footer*/
+    .info-desk  {
+        display: none;
+    }
+    .info-mobile {
+        display: block;
+    }
+    /*About page*/
+    .about-page .img-about {
+        height: 30vh; 
+        margin-bottom: 0;
+    }
+    .about-page .container {
+        padding: 0 30px;
+    }
+    .about-page h2 {
+        font-size: 32px;
+    }
+    .about-page h3 {
+        font-size: 28px;
+    }
+    /*Menu page*/
+    .menu-list h2 {
+        font-size: 44px;
+    }
+    .menu-list .card {
+        margin: 5px;
+    }
+    /*Booking page*/
+    .booking-detail{
+        padding: 10px;
+    }
+    .booking-detail h2{
+        font-size: 38px;
+    }
+    .booking-detail p {
+        font-size: 16px;
+    }
+    .booking-detail button {
+        width: 100%;
+    }
+    .booking-list button {
+        margin: 5px;
+    }
+    /*Menu/plato item*/
+    .menu-item {
+        padding: 0 5px;   
+    }
+    .menu-item h2 {
+        font-size: 32px;
+        text-align: center; 
+    }
+    .menu-item p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    /*Error page*/
+    .error-page {
+        padding: 25px;
+    }
+    .error-page h3 {
+        font-size: 48px;
+    }
+    .error-page h4 {
+        font-size: 18px;
+    }
+    .error-page button {
+        width: 80%;
+    }
+}
