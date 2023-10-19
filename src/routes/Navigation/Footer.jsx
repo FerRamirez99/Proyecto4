@@ -20,7 +20,7 @@ const Footer = () => {
                 <hr />
                <Row>
                     <Col>
-                        <NavLink to="/home">Inicio</NavLink>
+                        <NavLink to="/">Inicio</NavLink>
                         <NavLink to="/about">Sobre Nosotros</NavLink>
                         <NavLink to="/menu">Menú</NavLink>
                         <NavLink to="/booking">Reserva</NavLink>

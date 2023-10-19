@@ -9,7 +9,7 @@ const NotFoundPage = () => {
         <h3>Página No Encontrada</h3>
         <hr />
         <h4>No se pudo encontrar la página solicitada.</h4>
-        <NavLink to="/home">
+        <NavLink to="/">
           <Button variant="outline-primary">Volver al inicio</Button>
         </NavLink>
       </Container> 
