@@ -37,6 +37,8 @@ El enfoque principal del proyecto es desarrollar una aplicación web con React y
 ## **Demo:**
 A continuación, se presenta un enlace a la demo del proyecto.
 
+https://leafy-gnome-9cedc8.netlify.app/
+
 ## **Uso:**
 1. Descargar proyecto.
 2. Abrir la carpeta del proyecto en un editor de código.
