@@ -28,7 +28,7 @@ const BookingDetail = () => {
             setVal(dbVal.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         }
         getData()
-    })
+    }, [])
 
     const handleSubmit = async () => {
         //! Agregar elementos
@@ -162,7 +162,7 @@ const BookingDetail = () => {
                                 <th>N° Personas</th>
                                 <th>Fecha</th>
                                 <th>Hora</th>
-                                <th></th>
+                                <th>Editar/Borrar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -174,8 +174,10 @@ const BookingDetail = () => {
                                         <td>{values.personas}</td>
                                         <td>{values.fecha}</td>
                                         <td>{values.hora}</td>
-                                        <td className="actions"><Button onClick={() => handleDelete(values.id)}><DeleteOutlineIcon /></Button>
-                                            <Button onClick={() => handleEdit(values.id, values.nombre, values.email, values.personas, values.fecha, values.hora)}><EditIcon /></Button></td>
+                                        <td className="actions">
+                                            <Button onClick={() => handleEdit(values.id, values.nombre, values.email, values.personas, values.fecha, values.hora)}><EditIcon /></Button>
+                                            <Button onClick={() => handleDelete(values.id)}><DeleteOutlineIcon /></Button>
+                                        </td>
                                     </tr>
                                 ))
                             }

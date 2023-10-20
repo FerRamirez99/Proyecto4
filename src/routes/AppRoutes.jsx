@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import BookingDetail from "../components/views/BookingDetail";
 import MenuList from "../components/views/MenuList";
 import MenuProduct from "../components/views/MenuProduct";
+import BookingMain from "../components/views/BookingMain";
 
 const AppRoutes = () => {
   return (
@@ -16,7 +17,7 @@ const AppRoutes = () => {
                 <Route path="/about" element={<AboutDetail />}/>
                 <Route path="/menu" element={<MenuList />}/>
                 <Route path="/menu/:itemID" element={<MenuProduct />}/>
-                <Route path="/booking" element={<BookingDetail />}/>
+                <Route path="/booking" element={<BookingMain />}/>
                 <Route path="*" element={<NotFoundPage />} />
             </Route>
         </Routes>

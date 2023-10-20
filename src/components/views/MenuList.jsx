@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import { collection, getDocs } from "firebase/firestore"
 import { db } from "../../config/Firebase"
-import { Container } from "react-bootstrap"
+import { Container, Spinner } from "react-bootstrap"
 import MenuCard from "../MenuCard"
 
 
 const MenuList = () => {
   const [menu, setMenu] = useState([])
+  const [loading, setLoading] = useState(false) 
 
   useEffect(() => {
     const getMenu = async () => {
@@ -20,7 +21,7 @@ const MenuList = () => {
           return data
         })
         setMenu(docs)
-
+        setLoading(true)
       } catch (err) {
         console.error(err)
       }
@@ -32,7 +33,7 @@ const MenuList = () => {
     <main className="menu-list">
       <Container>
         <h2>Menú</h2>
-        <MenuCard menu={menu} />
+        {loading ? (<MenuCard menu={menu} />) : (<Spinner animation="border" />)}
       </Container>
     </main>
   )
