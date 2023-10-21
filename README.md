@@ -37,7 +37,7 @@ El enfoque principal del proyecto es desarrollar una aplicación web con React y
 ## **Demo:**
 A continuación, se presenta un enlace a la demo del proyecto.
 
-https://leafy-gnome-9cedc8.netlify.app/
+
 
 ## **Uso:**
 1. Descargar proyecto.
@@ -45,8 +45,4 @@ https://leafy-gnome-9cedc8.netlify.app/
 3. Instalar las dependencias con el siguiente codigo en la terminal:
 ```
 npm install
-```
-4. Para ver la aplicación correr el comando:
-```
-npm run dev
 ```
