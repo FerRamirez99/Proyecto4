@@ -37,12 +37,4 @@ El enfoque principal del proyecto es desarrollar una aplicación web con React y
 ## **Demo:**
 A continuación, se presenta un enlace a la demo del proyecto.
 
-
-
-## **Uso:**
-1. Descargar proyecto.
-2. Abrir la carpeta del proyecto en un editor de código.
-3. Instalar las dependencias con el siguiente codigo en la terminal:
-```
-npm install
-```
+https://super-pika-a4c814.netlify.app/
