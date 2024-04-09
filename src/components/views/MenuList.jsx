@@ -4,7 +4,6 @@ import { db } from "../../config/Firebase"
 import { Container, Spinner } from "react-bootstrap"
 import MenuCard from "../MenuCard"
 
-
 const MenuList = () => {
   const [menu, setMenu] = useState([])
   const [loading, setLoading] = useState(false) 
