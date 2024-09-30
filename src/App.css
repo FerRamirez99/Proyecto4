@@ -349,7 +349,8 @@ footer .copy {
     padding: 30px;
 }
 .menu-list .card-group {
-    width: auto;
+    align-items: center;
+    justify-content: center;
 }
 .menu-list .card {
     width: 18rem;
@@ -490,6 +491,11 @@ footer .copy {
     }
     .menu-list .card {
         margin: 5px;
+    }
+    .menu-list .card-group {
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
     /*Booking page*/
     .booking-detail{

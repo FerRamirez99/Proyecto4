@@ -40,6 +40,7 @@ export const Input = ({nombre, setNombre, email, setEmail, personas, setPersonas
                         id="inputPersonas"
                         name="personas"
                         min="1"
+                        max="10"
                         value={personas}
                         placeholder="4"
                         onChange={(e) => setPersonas(Number(e.target.value))}
